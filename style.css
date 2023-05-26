@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+}
+
+/* utilities */
+
+.flex{
+    display: flex;
+}
+.flex-c{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    overflow: auto;
+    padding: 0 40px;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+ }
+ul{
+    list-style: none;   
+    gap: 40px;
+}
+img,.btn,.places-card,.card,.box,.navbar li,.navbar .left,i{
+    cursor: pointer;
+}
+
+/* header */
+
+.navbar{
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    color: white;
+    padding: 20px 40px;
+    line-height: 1.2;
+    /* margin-top: -20px; */
+
+}
+.navbar .left{
+    font-weight: 900;
+    font-size: 12px;
+}
+.navbar .right{
+    font-weight: 500;
+    font-size: 20px;
+}
+.navbar .right i{
+    display: none;
+}
+header{
+    background-image: url(hero_bg.avif);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 1;
+    transition: all 1.4s ease 0s;
+    /* padding: 40px; */
+}
+.hero{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    gap: 20px;
+}
+.hero-text{
+    background-image: url(hero_text.avif);
+    background-size: contain;
+    height: 70px;
+    width: 250px;
+    background-repeat: no-repeat;
+}
+.hero h2{
+    color: white;
+    font-size: 26px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-align: center;
+}
+.searchcontainer{
+    display: flex;
+    align-items: center;
+    height: 55px;
+    width: 800px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
+    border: 5px solid rgb(255, 255, 255);
+    gap: 5px;
+    padding: 0 10px;
+}
+.bhopal{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: unset;
+    gap: 5px;
+    width: 25%;
+}
+.hero .bhopal h3{
+    color: rgb(179, 179, 179);
+    font-size: large;
+}
+.bhopal i{
+    text-align: center;
+}
+.search{
+    width: 70%;
+}
+.searchbar{
+    border: none;
+    font-size: 10px;
+    width: 90%;
+}
+input::placeholder{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.cardcontainer{
+    /* border: 2px solid black; */
+    justify-content: space-evenly;
+    transition: all 1.4s ease 0s;
+    padding: 40px 10px;
+    gap: 20px;
+}
+.box{
+    position: relative;
+    width: fit-content;
+    height:fit-content;
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    
+}
+.card-img{
+    width: 300px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: centre;
+    
+}
+.card-text{
+    position: relative;
+    border: 1px solid rgb(232, 232, 232);
+    background-color: white;
+    margin-top: -60px;
+    width: 300px;
+    padding: 15px 10px;
+    border-radius: 0 0 7px 7px;
+}
+.img-1{
+    background-image: url(order.avif);
+}
+.img-2{
+    background-image: url(dining.avif);
+}
+.img-3{
+    background-image: url(nightlife.avif);
+}
+
+/* collectons */
+
+.collection{
+    flex-direction: column;
+}
+.collection h2{
+    color: black;
+    font-weight: 600;
+    font-size: 28px;
+}
+.collection .text{
+    color: black;
+    justify-content: space-between;
+}
+.collection .text .red{
+    color:  #ff7e8b;
+}
+.collectionbox{
+    /* border: 2px solid black; */
+    justify-content: space-evenly;
+    transition: all 1.4s ease 0s;
+    padding: 40px 0;
+    gap: 10px;
+}
+.collection .card{
+    position: relative;
+    width:300px;
+    height:350px;
+    /* border: 2px solid red; */
+    border-radius: 7px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px 10px;
+    justify-content:end;
+    color: white;
+}
+.collection .card h4{
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.collection .card p{
+    font-weight: 600;
+}
+.collection .card-1{
+    background-image: url(visit.avif);
+}
+.collection .card-2{
+    background-image: url(rooftop.avif);
+}
+.collection .card-3{
+    background-image: url(sweet.avif);
+}
+.collection .card-4{
+    background-image: url(samosa.avif);
+}
+
+/* places */
+
+.places{
+    justify-content: unset;
+    flex-direction: column;
+}
+.places h2{
+    color: black;
+    font-weight: 600;
+    font-size: 28px;
+}
+.places h5{
+    color: black;
+    font-weight: 400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.places-box{
+    /* border: 2px solid red; */
+    padding: 20px 10px;
+    height: fit-content;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.places-box .places-card .text{
+    flex-direction: column;
+    padding: 0 5px;
+}
+.places-box .places-card{
+    cursor: pointer;
+    position: relative;
+    width: 350px;
+    height: fit-content;
+    padding: 5px 5px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.8rem;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(232, 232, 232);
+    margin: 10px 0;
+}
+
+/* app */
+
+.app{
+    background-color: #FFFBF7;
+    padding: 40px 10px;
+}
+.app .img{
+    width: 350px;
+    padding: 60px;
+}
+.app .text h2{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.app .text p{
+    color: #727272;
+}
+.app .text{
+    gap: 10px;
+}
+.app .text .option{
+    display: flex;
+    gap: 20px;
+}
+.app .text .input{
+    padding: 10px;
+    border: 1.5px solid rgb(229, 229, 229);
+    border-radius: 5px;
+}
+.app .text .applink{
+    gap: 10px;
+    margin: 10px 0;
+}
+.app .text .btn{
+    padding: 10px;
+    background-color:#ff7e8b;
+    color: white;
+    border-radius: 5px;
+}
+.app .text .store-img{
+    gap: 10px;
+}
+
+/* near me */
+
+.near-me{
+    padding: 40px;
+    gap: 10px;
+}
+.near-me .near-me-card{
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.8rem;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(232, 232, 232);
+    margin: 10px 0;
+}
+.near-me .near-me-card h2{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.near-me .near-me-card h5{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+/* footer */
+
+footer{
+    background-color: #f8f8f8;
+}
+.footer{
+    padding: 60px 40px;
+}
+.start{
+    justify-content: space-between;
+    width: 100%;
+   
+}
+footer .flex-btn{
+    gap: 10px;
+}
+footer .btn{
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    border: 1.5px solid rgb(149, 149, 149);
+    color: white;
+    border-radius: 5px;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+footer .mid{
+    padding: 25px 0;
+    justify-content: space-between;
+}
+footer .mid .row{
+    gap: 10px;
+    letter-spacing: 0.5px;
+    width: fit-content;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+oter .mid .row h4{
+    letter-spacing: 2px;
+    width: fit-content;
+}
+footer .mid .row p{
+    cursor: pointer;
+}
+footer .mid .row .social{
+    gap: 5px;
+    align-items: center;
+}
+footer .end p{
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+footer .end{
+    padding: 20px 0;
+} 
+.caret-down-menu{
+    margin-left: 70px;
+}
+.bhopal{
+    margin-right: 30px;
+}
+/* responsive */
+
+@media(max-width: 1000px){
+    .card-img{
+        width: 250px;
+        height: 200px;
+        
+    }
+    .card-text{
+        width: 250px;
+        
+    }
+}
+@media(max-width: 950px){
+    footer .mid{
+        flex-wrap: wrap;
+        justify-content:center;
+        gap: 40px;   
+    }
+    .collectionbox{
+        flex-wrap: wrap;
+    }
+    .indore{
+        width: 40%;
+    }
+    .search{
+        width: 60%;
+    }
+    
+}
+@media (max-width: 800px) {
+    .cardcontainer{
+        flex-wrap: wrap;
+    }
+    
+}
+@media(max-width: 750px){
+    .app-flex{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 700px){
+    header .navbar ul{
+        display: none;
+    }
+    .navbar .right i{
+        display: unset;
+    }
+    .searchcontainer{
+        width: 90%;
+    }
+}
+@media(max-width: 500px){
+    footer .start{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    footer footet .mid .row-5{
+        width: 200px;
+        margin: auto;
+    }
+}
+@media(max-width: 420px){
+    .searchbar{
+        width: 80%;
+    }
+    .indore{
+        width: 40%
+    }
+}
